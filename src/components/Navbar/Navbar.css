@@ -1,0 +1,14 @@
+.wrap {
+    display: flex;
+    justify-content: space-between;
+
+    & img {
+    width: 100px;
+    }
+
+    & ul {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
