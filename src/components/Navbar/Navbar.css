@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-block: 1rem 2rem;
 
     & img {
-    width: 100px;
+    width: 83px;
     }
 
     & ul {
@@ -13,7 +14,15 @@
     }
 
     & a {
-        color: red;
+        color: #000;
+    }
+}
+
+@media (width >= 768px) {
+    .wrap {
+        & img {
+            width: 120px;
+        }
     }
 }
 
