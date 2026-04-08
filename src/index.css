@@ -1,3 +1,13 @@
 body {
-    padding-inline: 3rem;
+      font-family: "Montserrat", sans-serif;
+}
+
+.paddingContent {
+    padding-inline: 1rem;
+}
+
+@media (width >= 768px) {
+    .paddingContent {
+        padding-inline: 3rem;
+    }
 }
