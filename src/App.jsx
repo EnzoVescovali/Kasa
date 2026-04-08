@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router";
 import Navbar from "./components/Navbar/Navbar";
 import AboutPage from "./layout/AboutPage"
 import HomePage from "./layout/HomePage"
+import Logement from "./layout/Logement"
+import Error from "./layout/Error"
 import Footer from "./components/Footer/Footer";
 
 
@@ -18,6 +20,14 @@ const App = () => {
         <Route 
           path="/a-propos"
           element={<AboutPage/>}
+        />
+        <Route 
+          path="/logement/:id"
+          element={<Logement/>}
+        />
+       <Route 
+          path="*"
+          element={<Error/>}
         />
       </Routes>
       <Footer/>
