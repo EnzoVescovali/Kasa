@@ -1,13 +1,17 @@
 import React from 'react'
 import "./Card.css"
+import { NavLink } from 'react-router'
 
-function Card( {image, title} ) {
+function Card( {id, image, title} ) {
   return (
     <>
-        <article>
-            <img src={image} />
-            <h3> {title} </h3>
-        </article>
+        <NavLink to={`/logement/${id}`}>
+          <article>
+              <img src={image} />
+              <h3> {title} </h3>
+          </article>
+        </NavLink>
+        
     </>
   )
 }

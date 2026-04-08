@@ -1,6 +1,7 @@
 .wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     & img {
     width: 100px;
@@ -9,6 +10,10 @@
     & ul {
         display: flex;
         gap: 2rem;
+    }
+
+    & a {
+        color: red;
     }
 }
 
