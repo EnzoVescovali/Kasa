@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router'
 import data from "../data/Data.json"
-import Error from './Error'
+import Error from './ErrorPage/Error'
 
 function Logement() {
     const {id} = useParams()
