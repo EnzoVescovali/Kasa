@@ -6,7 +6,7 @@ import logement from "../../data/Data.json"
 function CardsContainer() {
   return (
     <>
-        <section>
+        <section className='cardsSection'>
             {logement.map((card) => (
                     <Card 
                         id={card.id}

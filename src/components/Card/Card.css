@@ -1,0 +1,29 @@
+.cardLink {
+    max-width: 340px;
+    display: block;
+    width: 100%;
+
+    & article {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    & img {
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.7);
+        aspect-ratio: 1 / 1;
+    }
+
+    & h3 {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    }
+}
+

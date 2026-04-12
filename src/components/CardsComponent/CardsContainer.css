@@ -1,11 +1,14 @@
-section {
+.cardsSection {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 200px;
-    gap: 1rem;
-    /* justify-content: center; */
+    gap: 2rem;
+    border-radius: 25px;
+    background-color: #F6F6F6;
+    padding: 2rem;
+    justify-items: center;
+}
 
-    & img {
-        max-width: 300px;
-    }
+@media (width >= 768px) {
+    .cardsSection {
+        grid-template-columns: repeat(3, 1fr);
+    }   
 }
