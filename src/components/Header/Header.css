@@ -1,11 +1,30 @@
-.headerTitle {
-    background:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../../assets/4706e7dde270fc8fc902a1eb738458e7b29c1899.jpg") center/cover no-repeat;
+.header {
     border-radius: 20px;
     height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-block: 1rem 2rem;
+    padding-inline: 1rem;
+}
+
+.header.home {
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/4706e7dde270fc8fc902a1eb738458e7b29c1899.jpg") center/cover no-repeat;
+}
+
+.header.about {
+      background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/56fae17eb9995860bb6384a77ca7dc9bf52da3be.jpg") center/cover no-repeat;
+}
+
+@media (width >= 768px) {
+    .header {
+        font-size: 3rem;
+    }
 }

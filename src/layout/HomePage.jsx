@@ -6,7 +6,7 @@ import CardsContainer from '../components/CardsComponent/CardsComponent';
 function HomePage() {
   return (
     <>
-      <Header/>
+      <Header variant="home" title="Chez vous, partout et ailleurs"/>
       <CardsContainer/>
     </>
   )
