@@ -1,0 +1,30 @@
+details::details-content {
+  block-size: 0;
+}
+
+details {
+  overflow: hidden;
+  margin-block-end: 2rem;
+
+  & p {
+    text-align: start;
+    padding: .5rem 1rem 1rem 1rem;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+  }
+}
+
+details:open::details-content{
+  block-size: auto;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  background-color: #FF6060;
+  user-select: none;
+  font-weight: 700;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;  
+}
