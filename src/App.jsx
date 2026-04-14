@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router";
 import Navbar from "./components/Navbar/Navbar";
 import AboutPage from "./layout/AboutPage"
 import HomePage from "./layout/HomePage"
-import Logement from "./layout/Logement"
+import Logement from "./layout/Logement/Logement"
 import Error from "./layout/ErrorPage/Error"
 import Footer from "./components/Footer/Footer";
 
@@ -23,7 +23,7 @@ const App = () => {
             element={<AboutPage/>}
           />
           <Route
-            path="/logement/:id"
+            path="/Logement/:id"
             element={<Logement/>}
           />
          <Route
