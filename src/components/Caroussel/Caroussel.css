@@ -1,0 +1,35 @@
+.caroussel {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-block-end: 1rem;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  & button {
+    position: absolute;
+    top: 50%;
+    border: none;
+    color: #fff;
+    transform: translateY(-50%);
+    background-color: transparent;
+    font-size: 7rem;
+    cursor: pointer;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+
+    &:first-of-type {
+        left: 1rem;
+    }
+
+    &:last-of-type {
+        right: 1rem;
+    }
+  }
+}
