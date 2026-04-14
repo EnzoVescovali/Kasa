@@ -40,10 +40,38 @@
 }
 
 .star {
-  color: #000;
-  font-size: 1.5rem;
+    color: #000;
+    font-size: 1.5rem;
 
-  &.active {
-    color: #ff6060;
-  }
+    &.active {
+        color: #ff6060;
+    }
+}
+
+.logementRightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.logementCollapses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.75rem;
+    margin-top: 1.5rem;
+
+    & details {
+        width: 100%;
+        margin-block-end: 0;
+    }
+
+    & p {
+        font-size: 1.125rem;
+        line-height: 1.6;
+    }
+
+    & summary {
+        font-size: 1.125rem;
+        padding: 0.85rem 1rem;
+    }
 }

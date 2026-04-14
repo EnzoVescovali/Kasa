@@ -28,3 +28,7 @@ summary {
   padding: 1rem;
   border-radius: 5px;  
 }
+
+details p {
+  white-space: pre-line;
+}
