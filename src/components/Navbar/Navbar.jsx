@@ -7,12 +7,12 @@ function Navbar() {
   return (
     <>
       <nav className="wrap">
-        <div className="LeftSide">
+        <NavLink to="/" className="LeftSide">
                 <img src={logo}/>
-        </div>
+        </NavLink>
         <ul className="RightSide">
           <li>
-            <NavLink to="/">
+            <NavLink to="/" end>
               Accueil
             </NavLink>
           </li>
