@@ -1,5 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 import data from "../../data/Data.json"
 import Error from '../ErrorPage/Error'
 import Caroussel from '../../components/Caroussel/Caroussel'
@@ -38,12 +40,11 @@ function Logement() {
 
                     <div className='stars'>
                         {[1, 2, 3, 4, 5].map((star) => (
-                            <span
+                            <FontAwesomeIcon
                                 key={star}
+                                icon={faStar}
                                 className={star <= Number(logement.rating) ? "star active" : "star"}
-                            >
-                                *
-                            </span>
+                            />
                         ))}
                     </div>
                 </div>
@@ -57,7 +58,13 @@ function Logement() {
 
                 <Collapse
                     title="Équipements"
-                    content={logement.equipments.join("\n")}
+                    content={
+                        <ul className="collapse-list">
+                            {logement.equipments.map((equipment) => (
+                            <li key={equipment}>{equipment}</li>
+                            ))}
+                        </ul>
+                    }
                 />
             </div>
         </>
