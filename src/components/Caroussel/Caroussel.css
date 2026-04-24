@@ -32,4 +32,18 @@
         right: 1rem;
     }
   }
+
+  & p {
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0.35rem 0.75rem;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    z-index: 2;
+  }
 }
