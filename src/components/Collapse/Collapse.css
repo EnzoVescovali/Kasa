@@ -1,34 +1,33 @@
-details::details-content {
-  block-size: 0;
-}
-
-details {
+.collapse {
   overflow: hidden;
   margin-block-end: 2rem;
-
-  & p {
-    text-align: start;
-    padding: .5rem 1rem 1rem 1rem;
-    background-color: #f6f6f6;
-    border-radius: 5px;
-  }
 }
 
-details:open::details-content{
-  block-size: auto;
-}
-
-summary {
-  list-style: none;
+.collapse__summary {
   cursor: pointer;
   background-color: #FF6060;
   user-select: none;
   font-weight: 700;
   color: #fff;
   padding: 1rem;
-  border-radius: 5px;  
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-details p {
+.collapse__icon {
+  transition: transform 0.3s ease;
+}
+
+.collapse__icon.open {
+  transform: rotate(180deg);
+}
+
+.collapse__content p {
+  text-align: start;
+  padding: .5rem 1rem 1rem 1rem;
+  background-color: #f6f6f6;
+  border-radius: 5px;
   white-space: pre-line;
 }
